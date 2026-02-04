@@ -1,0 +1,130 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CARD */
+.card {
+    width: 340px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    border-radius: 22px;
+    padding: 30px 22px;
+    text-align: center;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.6);
+}
+
+/* PROFILE PHOTO */
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.6);
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* NAME */
+.card h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+/* TITLE */
+.title {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+/* CONTACT SECTION */
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* CONTACT ITEM */
+.contact-item a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+/* ICON */
+.icon {
+    font-size: 18px;
+}
+
+/* HOVER EFFECT */
+.contact-item a:hover {
+    background: #ffffff;
+    color: #111827;
+    transform: scale(1.04);
+}
+
+/* ICON COLOR ON HOVER */
+.contact-item a:hover .icon {
+    color: #111827;
+}
+
+/* SOCIAL COLORS */
+.whatsapp-link:hover {
+    background: #25D366;
+    color: #ffffff;
+}
+
+.phone-link:hover {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.social-link:hover {
+    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+    color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 400px) {
+    .card {
+        width: 90%;
+    }
+}
